@@ -3,7 +3,7 @@
 # ======================================================
 
 variable "aws_region" {
-  description = "provide the aws_region"
+  description = "The AWS region where resources will be created (e.g., us-east-1, us-west-2)."
   type        = string
 }
 
@@ -12,22 +12,12 @@ variable "aws_region" {
 # ======================================================
 
 variable "app_id" {
-  description = "provide an app-id"
+  description = "A unique identifier for your application, used in provisioning profiles."
   type        = string
 }
 
 variable "environment" {
-  description = "provide some environment name"
-  type        = string
-}
-
-variable "mail" {
-  description = "provide an email to send mails"
-  type        = string
-}
-
-variable "name" {
-  description = "provide an email to send mails"
+  description = "The name of the environment where resources will be deployed (e.g., dev, staging, prod)."
   type        = string
 }
 
@@ -37,5 +27,5 @@ variable "name" {
 
 variable "number_of_images" {
   type        = number
-  description = "number of images to keep in the ECR"
+  description = "The number of container images to retain in the Amazon ECR repository."
 }
