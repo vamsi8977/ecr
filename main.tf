@@ -4,7 +4,7 @@
 
 module "ecr" {
   source                          = "terraform-aws-modules/ecr/aws"
-  version                         = "2.3.1"
+  version                         = "2.4.0"
   repository_name                 = "${var.aws_region}-${var.environment}-ecr"
   repository_image_tag_mutability = "IMMUTABLE"
   repository_image_scan_on_push   = true
